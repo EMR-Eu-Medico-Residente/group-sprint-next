@@ -5,8 +5,6 @@ import sendApiRequest from './sendApiRequest';
 export default async function getDevelopers(): Promise<DeveloperWithAvatar[]> {
   const { data } = await sendApiRequest<DevelopersResponse>('api/developers?populate=avatar');
 
-  await new Promise(resolve => setTimeout(resolve, 2000000));
-
   return data
     .map(({ id, attributes }) => {
       const { avatar, name } = attributes;
