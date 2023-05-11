@@ -1,3 +1,4 @@
+import { Header } from '@/app/Header';
 import '@/styles/globals.css';
 import { Poppins } from 'next/font/google';
 
@@ -15,7 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='pt-br'>
       <head></head>
-      <body className={`${poppins.className} bg-red-200`}>{children}</body>
+      <body className={`${poppins.className} h-screen bg-gray-500`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

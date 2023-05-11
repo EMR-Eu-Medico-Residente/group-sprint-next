@@ -4,6 +4,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/design-system-medclub/dist/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     lineHeight: {
@@ -23,6 +24,7 @@ module.exports = {
       green: {
         light200: '#42EC9D',
         pure: '#35BD78',
+        dark000: '#009A5A',
       },
       white: {
         100: '#FEFDFF',
